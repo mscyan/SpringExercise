@@ -2,15 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
-    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
-    default-init-method="init" 
-    default-destroy-method="destroy">
-    <!-- default-func-method 可解决项目有太多具有相同名称或者销毁方法的Bean -->
-    <bean id="helloWorld"
-    		class="com.tutorialspoint.HelloWorld"
-    		init-method="init" 
-    		destroy-method="destroy">
-    	<property name="message" value="Hello World!" />
-	</bean>
-    
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id="helloWorld" 
+       class="com.tutorialspoint.HelloWorld"
+       init-method="init" destroy-method="destroy">
+       <property name="message" value="Hello World!"/>
+   </bean>
+
 </beans>

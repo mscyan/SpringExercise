@@ -11,7 +11,6 @@ public class MainApp
 		HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
 		obj.getMessage();
 		context.registerShutdownHook();
-		
-//		obj.getMessage();
+		obj.getMessage();
 	}
 }
