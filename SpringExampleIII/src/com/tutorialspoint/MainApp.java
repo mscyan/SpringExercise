@@ -12,6 +12,6 @@ public class MainApp
 		obj.getMessage();
 		context.registerShutdownHook();
 		obj.getMessage(); 
-		//其实我没有做代码修改
+		
 	}
 }
